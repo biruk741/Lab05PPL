@@ -32,7 +32,7 @@ def isVowel(c)
 end
 
 numVowels = -> (sum, key, val) {
-    sum ||= 0
+    sum ||= 0 # set to 0 if nil, same for the ones below
     if isVowel(key)
         sum + val
     else
